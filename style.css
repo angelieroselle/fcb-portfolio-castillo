@@ -1,0 +1,83 @@
+/*Syntax CSS
+
+Selector {property: value; property: value}
+
+*/
+
+/*(*) symbol specify the universal selector meaning, 
+	  we can select all HTML elements*/
+*{
+	font-family: "Roboto", sans-serif;
+}
+
+
+h1,h3 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+img{
+	height: 250px;
+	width: 250px;
+}
+
+#landing{
+	/*vh-viewport heigth- determinned or measurednpercentage of the
+	height of the device you are viewing your webpage in*/
+	height: 80vh;
+	
+	/*flexbox- display:  flex - allow to arrange or layout elements
+	inside landing section vertically and horizontally*/
+	/*by default, display:  flex, arranges elements inside the parent element in a row*/
+	
+	display:  flex;
+
+	/*flex-direction changes direction of the element inside an element with display:  flex*/
+	
+	flex-direction: column;
+
+	/*column- arranges flex into column*/
+
+
+	/*align-items arages elements vertically or horizontally*/
+	
+	align-items: center;
+	
+	/*center-arranges all flex items to be centered horizontally*/
+
+	/*justify-content: - arranges elements horizontally if the flex items are in a row. 
+	However, it arranges elements horizonatlly if the flex items are in column*/
+	
+	justify-content: center;
+	
+	/*-:center - arranges all items in the flex parent to be centered vertically if the flex parent are in column*/
+}
+
+#gallery{
+	height: 75vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+ul{
+	list-style: none;
+	padding: 0;
+}
+
+.tools{
+	/*border-line arround element*/
+	border: 5px solid #f2f2f2;
+	/*margin-space outside element*/
+	margin: 20px;
+	/*padding-space inside element*/
+	padding: 25px;
+
+	height: 200px;
+	/*% as a measurement, measurement based on parent element*/
+	width: 75%;
+}
+
+html{
+	scroll-behavior: smooth;
+}
